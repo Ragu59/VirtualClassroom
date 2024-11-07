@@ -8,9 +8,9 @@ app.secret_key = 'temporary_key'
 # Database connection
 def get_db_connection():
     return mysql.connector.connect(
-        host='vcdb.c3y48qw4clrb.us-east-1.rds.amazonaws.com',
+        host='vcdb.cf840m2q2ceg.us-east-1.rds.amazonaws.com',
         user='admin',
-        password='Dhonikm23',
+        password='Raguram2005$',
         database='vcdb'
     )
 # Registration Route
@@ -55,8 +55,8 @@ def login():
 @app.route('/dashboard')
 def dashboard():
     course_urls = [
-        'https://vcbucket1.s3.us-east-1.amazonaws.com/Python+codes.pdf',
-        'https://vcbucket1.s3.us-east-1.amazonaws.com/PYTHON+PROGRAMMING+NOTES.pdf'
+        'https://virtualclassroombucket.s3.us-east-1.amazonaws.com/Python+codes.pdf',
+        'https://virtualclassroombucket.s3.us-east-1.amazonaws.com/PYTHON+PROGRAMMING+NOTES.pdf'
     ]
     
     return render_template('dashboard.html', course_urls=course_urls)
